@@ -1,0 +1,9 @@
+.demo-inline-calendar-card {
+  width: 300px;
+  display: block;
+}
+
+mat-calendar {
+  width: 150px;
+  display: inline-block;
+}

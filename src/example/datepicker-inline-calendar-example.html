@@ -1,0 +1,31 @@
+<mat-card class="demo-inline-calendar-card">
+  <mat-calendar
+    [maxDate]="maxDateOfFirtsCalendar"
+    [selected]="selectedRange"
+    (selectedChange)="selectedDateChange($event)"
+  ></mat-calendar>
+  <mat-calendar
+    [startAt]="startDateOfSecondCalendar"
+    [minDate]="minDateOfSecondCalendar"
+    [selected]="selectedRange"
+    (selectedChange)="selectedDateChange($event)"
+  ></mat-calendar>
+</mat-card>
+
+<pre>Start date: {{selectedRange?.start}}</pre>
+<pre>End date: {{selectedRange?.end}}</pre>
+
+<br />
+<a href="https://github.com/PaladinCloud"> @PaladinCloud </a>
+<br />
+Source of
+<a
+  href="https://github.com/PaladinCloud/CE/blob/d341504e6be81007a790237b608409b50cf08330/webapp/src/app/shared/date-selection/date-selection.component.ts"
+>
+  selectedDateChange
+</a>
+code
+
+<!-- Copyright 2023 Google LLC. All Rights Reserved.
+    Use of this source code is governed by an MIT-style license that
+    can be found in the LICENSE file at https://angular.io/license -->
